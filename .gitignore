@@ -1,0 +1,42 @@
+# Environment files (apenas os que contém dados sensíveis)
+.env
+.env.local
+.env.production
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Database journals (apenas journals, não os .db)
+*.db-journal
+
+# Logs grandes em produção (manter logs de debug pequenos)
+logs/*.log
+logs/generator.log
+logs/publisher.log
+logs/review.log
+logs/scheduler.log
+logs/scraper.log
+
+# Arquivos temporários de desenvolvimento
+test_*.py
+debug_*.py
+fix_*.py
+check_*.py
+reset_*.py
+
+# Chat logs enormes - manter apenas para referência local
+chat*.md 
